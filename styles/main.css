@@ -29,6 +29,9 @@
 html,
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 body {
@@ -164,7 +167,7 @@ main {
 
 footer {
   text-align: center;
-  padding: 3px;
+  /* padding: 3px; */
   background-color: var(--red);
   color: var(--egg-white);
 }
@@ -172,6 +175,8 @@ footer {
 .hero {
   position: relative;
   opacity: 0.85;
+  flex-direction: column;
+  display: flex;
 }
 
 .heroText {
@@ -206,4 +211,16 @@ footer {
 .card:hover {
   background-color: var(--orange);
   color: var(--font);
+}
+
+header {
+  margin-bottom: var(--font);
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
