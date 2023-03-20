@@ -224,3 +224,22 @@ header ul {
   padding: 0;
   list-style-type: none;
 }
+
+@media (min-width: 500px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .panel h2 {
+    margin: 0;
+  }
+
+  .panel .text-wrapper {
+    flex: 1 1 40%;
+  }
+
+  .panel .image-wrapper {
+    order: 0;
+    flex: 1 1 60%;
+  }
+}
