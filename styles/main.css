@@ -213,6 +213,7 @@ footer {
 }
 
 .card {
+  position: relative;
   display: flex;
   gap: 1rem;
   transition: color 300ms, text-decoration 300ms;
@@ -223,14 +224,23 @@ footer {
   color: var(--font);
 }
 .card h3 {
-  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  /* inset: 0; */
+  inset: 0;
   margin: 0;
   line-height: 1;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:link h3 {
+  color: var(--seaweed-green);
+}
+.cards:visited h3 {
+  color: var(--seaweed-green);
 }
 
 header {
