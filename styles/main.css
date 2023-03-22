@@ -120,16 +120,18 @@ h4 {
   font-family: "Roboto Serif", serif;
   margin-bottom: 1em;
 }
-article,
+article {
+  margin-top: 5rem;
+}
 aside {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 figcaption {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 a:link {
@@ -138,6 +140,9 @@ a:link {
 }
 a[href]:hover {
   color: var(--orange);
+}
+button {
+  margin-bottom: 5rem;
 }
 
 .button {
@@ -163,6 +168,8 @@ main {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 55rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 footer {
@@ -187,6 +194,8 @@ footer {
   transform: translate(-50%, -50%);
   text-shadow: 2px 2px var(--red);
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .hero h1 {
   font-size: clamp(2.5rem, 10vw + 1rem, 7rem);
@@ -200,6 +209,7 @@ footer {
   display: flex;
   gap: 1rem;
   margin: 0 1rem;
+  flex-direction: column;
 }
 
 .card {
@@ -211,6 +221,16 @@ footer {
 .card:hover {
   background-color: var(--orange);
   color: var(--font);
+}
+.card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* inset: 0; */
+  margin: 0;
+  line-height: 1;
+  padding: 0 1rem;
 }
 
 header {
@@ -228,6 +248,8 @@ header ul {
 @media (min-width: 500px) {
   .panel {
     flex-direction: row;
+    display: flex;
+    gap: 1rem;
   }
 
   .panel h2 {
@@ -241,5 +263,23 @@ header ul {
   .panel .image-wrapper {
     order: 0;
     flex: 1 1 60%;
+  }
+
+  .panel .left {
+    order: -1;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 1 40%;
+  }
+}
+
+@media (min-width: 100px) {
+  .cards {
+    flex-wrap: nowrap;
   }
 }
