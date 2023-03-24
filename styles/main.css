@@ -221,6 +221,7 @@ picture {
   gap: 1rem;
   margin: 0 1rem;
   flex-direction: column;
+  opacity: 0.8;
 }
 
 .card {
@@ -245,6 +246,7 @@ picture {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px var(--red);
 }
 
 header {
