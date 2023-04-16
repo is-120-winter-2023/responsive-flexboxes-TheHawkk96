@@ -28,6 +28,12 @@
 <body>
   <!-- TODO: add menu links, delete this comment -->
   <header>
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="40px" height="40px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -45,5 +51,10 @@
         ../images/console-controller-600px.jpg 600w,
         ../images/console-controller-900px.jpg 900w" sizes="50vw" src="../images/console-controller-600px.jpg"
   alt=" black and white consoles with matching controllers" width="600" height="600">
+<script>
+  document.querySelector(".menu-icon").addEventListener("click", function () {
+    this.parentElement.classList.toggle("close");
+  });
+</script>
 
 </html>
