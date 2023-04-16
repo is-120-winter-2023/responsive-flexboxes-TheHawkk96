@@ -27,6 +27,12 @@
 
 <body>
   <header>
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="40px" height="40px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
     <nav>
       <ul>
         <li><a href="">Home</a></li>
@@ -49,26 +55,29 @@
     </div>
   </div>
 
-  <p>Gameupdate.com is the place for gamers to easily know and understand what's new in their favorite video games,
-    allowing them to immediately know the new metas so they can perform to their max and make educated in game
-    decisions.
-  </p>
-
   <main>
+    <p>Gameupdate.com is the place for gamers to easily know and understand what's new in their favorite video games,
+      allowing them to immediately know the new metas so they can perform to their max and make educated in game
+      decisions.
+    </p>
+
     <article class="panel">
+
       <div class="text-wrapper left">
         <h2>Top Legends this Season</h2>
         <p>Let's Go!</p>
         <a href="#" class="button button1">Learn More</a>
       </div>
-    </article>
-    <figure>
+
       <div class="image-wrapper">
-        <img style="width:100%; height:auto" src="images/legends.jpg" alt="a person playing video games" width="900"
-          height="600">
+        <figure>
+          <img style="width:100%; height:auto" src="images/legends.jpg" alt="a person playing video games" width="900"
+            height="600">
+          <figcaption>Fig.1 - Legends</figcaption>
+        </figure>
       </div>
-      <figcaption>Fig.1 - Legends</figcaption>
-    </figure>
+
+    </article>
 
     <aside>
       <div class="text-wrapper">
@@ -90,19 +99,22 @@
 
 
     <article class="panel">
-      <div class="text-wrapper right">
+
+      <div class="text-wrapper">
         <h2>Top Guns this Season</h2>
         <p>Let's Go!</p>
         <a href="#" class="button button1">Learn More</a>
       </div>
-    </article>
 
-    <figure>
-      <div class="image-wrapper">
-        <img style="width:100%; height:auto" src="images/image.jpg" alt="a gun" width="900" height="599">
+
+      <div class="image-wrapper left">
+        <figure>
+          <img style="width:100%; height:auto" src="images/image.jpg" alt="a gun" width="900" height="599">
+          <figcaption>Fig.1 - Guns</figcaption>
+        </figure>
       </div>
-      <figcaption>Fig.1 - Guns</figcaption>
-    </figure>
+
+    </article>
 
     <aside>
       <div class="text-wrapper">
@@ -134,6 +146,12 @@
   <footer>
     <p>Website Creator: Hunter Hawkins</p>
   </footer>
+
+  <script>
+    document.querySelector(".menu-icon").addEventListener("click", function () {
+      this.parentElement.classList.toggle("close");
+    });
+  </script>
 </body>
 
 </html>

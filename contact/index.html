@@ -28,6 +28,12 @@
 <body>
   <!-- TODO: add menu links, delete this comment -->
   <header>
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="40px" height="40px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -38,7 +44,16 @@
   </header>
   <h1>Contact</h1>
 </body>
-<img src="../images/3669372_contact_ic_mail_icon.svg" alt="character and email">
+<img src="../images/3669372_contact_ic_mail_icon.svg" alt="character and email" width="600" height="600">
+
+<iframe src="https://player.twitch.tv/?channel=nicewigg&parent=www.example.com" frameborder="0" allowfullscreen="true"
+  scrolling="no" height="378" width="620"></iframe>
+
+<script>
+  document.querySelector(".menu-icon").addEventListener("click", function () {
+    this.parentElement.classList.toggle("close");
+  });
+</script>
 
 
 </html>
