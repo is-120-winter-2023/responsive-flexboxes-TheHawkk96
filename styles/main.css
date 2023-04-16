@@ -353,6 +353,18 @@ nav ul {
   margin-bottom: 2rem;
 }
 
+iframe {
+  text-align: center;
+  width: 800px;
+  height: 450px;
+  margin-bottom: 2rem;
+}
+twitch-embed {
+  width: 800px;
+  height: 450px;
+  text-align: center;
+}
+
 @media (min-width: 500px) {
   .menu-icon {
     display: none;

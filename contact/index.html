@@ -42,12 +42,26 @@
       </ul>
     </nav>
   </header>
-  <h1>Contact</h1>
-</body>
-<img src="../images/3669372_contact_ic_mail_icon.svg" alt="character and email" width="600" height="600">
 
-<iframe src="https://player.twitch.tv/?channel=nicewigg&parent=www.example.com" frameborder="0" allowfullscreen="true"
-  scrolling="no" height="378" width="620"></iframe>
+  <h1>Contact</h1>
+  <img src="../images/3669372_contact_ic_mail_icon.svg" alt="character and email" width="600" height="600">
+
+  <h2>Helpful Video to Get You Started</h2>
+  <iframe src="https://www.youtube.com/embed/d7lm11zLTbU" title="Apex Tutorial"></iframe>
+
+  <div id="twitch-embed"></div>
+</body>
+
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "nicewigg"
+  });
+</script>
 
 <script>
   document.querySelector(".menu-icon").addEventListener("click", function () {
